@@ -1,0 +1,1 @@
+SELECT * FROM appointments WHERE user_id = '12345' AND appointment_id = 'ABC12345';

@@ -31,3 +31,19 @@ This repository includes the following test components:
 - **Jenkins Pipeline**: A configuration for continuous integration to automate test execution during development.
 - **Postman Collections**: API tests to validate core backend services like user registration and appointment booking.
 
+
+
+## Setup Instructions
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/allara-health-testing.git
+
+   cd allara-health-testing
+
+pip install -r requirements.txt
+
+behave
+
+For Jenkins users, configure your Jenkins pipeline as defined in the Jenkinsfile.

@@ -1,8 +1,8 @@
-# Allara Health Testing Suite
+# Allara Health Testing Suite 
 
 ## Project Overview
 
-This repository contains a comprehensive suite of **automated and manual tests** for the **Allara Health** website, designed to ensure the platform’s core functionalities, security, performance, and usability. The tests cover critical features such as **user registration**, **appointment booking**, **payment processing**, and **virtual consultations**, aiming to deliver a seamless experience across multiple devices and browsers.
+This repository contains a comprehensive suite of **automated and manual tests** for the **Allara Health** website (www.allarahealth.com), designed to ensure the platform’s core functionalities, security, performance, and usability. The tests cover critical features such as **user registration**, **appointment booking**, **payment processing**, and **virtual consultations**, aiming to deliver a seamless experience across multiple devices and browsers.
 
 ## Tools and Technologies Used
 

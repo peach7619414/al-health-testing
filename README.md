@@ -44,16 +44,16 @@ yaml
 
 ## Test Coverage Summary
 
-- ✔User Registration (valid, invalid, edge cases)
-- ✔Login & Logout flows
-- ✔Appointment Booking (with and without selections)
-- ✔Payment with valid/invalid cards
-- ✔Profile Update
-- ✔API: Registration (positive + negative)
-- ✔SQL: Data integrity, duplicate checks, declined payments
-- ✔Responsive design: BrowserStack cloud execution
-- ✔Jenkins: Secure pipeline automation
-- ✔Reporting: HTML for visual validation
+- User Registration (valid, invalid, edge cases)
+- Login & Logout flows
+- Appointment Booking (with and without selections)
+- Payment with valid/invalid cards
+- Profile Update
+- API: Registration (positive + negative)
+- SQL: Data integrity, duplicate checks, declined payments
+- Responsive design: BrowserStack cloud execution
+- Jenkins: Secure pipeline automation
+- Reporting: HTML for visual validation
 
 ---
 

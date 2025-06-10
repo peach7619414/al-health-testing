@@ -86,7 +86,7 @@ Add BROWSERSTACK_USERNAME and BROWSERSTACK_KEY under:
 GitHub > Settings > Secrets and Variables > Actions
 
 About This Portfolio
-This project was created by Sonya [Your Last Name], a QA Software Tester with professional experience in:
+This project was created by Sunny Nelson a QA Software Tester with professional experience in:
 
 Manual and Automated Testing
 

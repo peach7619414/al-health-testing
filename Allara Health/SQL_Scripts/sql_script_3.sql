@@ -1,1 +1,0 @@
-UPDATE appointments SET status = 'confirmed' WHERE appointment_id = 'ABC12345';

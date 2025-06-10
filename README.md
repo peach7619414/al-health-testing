@@ -3,13 +3,13 @@
 This project is a **comprehensive Quality Assurance (QA) testing suite** created to test the web application of [Allara Health](https://allarahealth.com). 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 **Allara Health** is a women’s health platform that provides virtual care and treatment for hormone-related conditions. This testing suite ensures that all key user workflows — from registration and login to appointments and payments — are robust, secure, and user-friendly.
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## Tools & Technologies Used
 
 | Tool                | Purpose                                         |
 |---------------------|--------------------------------------------------|
@@ -24,7 +24,7 @@ This project is a **comprehensive Quality Assurance (QA) testing suite** created
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
  Test_Cases → Gherkin (.feature) files
 📂 Test_Cases_Excel → CSV-formatted test case documentation
@@ -42,22 +42,22 @@ yaml
 
 ---
 
-## ✅ Test Coverage Summary
+## Test Coverage Summary
 
-- ✔️ User Registration (valid, invalid, edge cases)
-- ✔️ Login & Logout flows
-- ✔️ Appointment Booking (with and without selections)
-- ✔️ Payment with valid/invalid cards
-- ✔️ Profile Update
-- ✔️ API: Registration (positive + negative)
-- ✔️ SQL: Data integrity, duplicate checks, declined payments
-- ✔️ Responsive design: BrowserStack cloud execution
-- ✔️ Jenkins: Secure pipeline automation
-- ✔️ Reporting: HTML for visual validation
+- ✔User Registration (valid, invalid, edge cases)
+- ✔Login & Logout flows
+- ✔Appointment Booking (with and without selections)
+- ✔Payment with valid/invalid cards
+- ✔Profile Update
+- ✔API: Registration (positive + negative)
+- ✔SQL: Data integrity, duplicate checks, declined payments
+- ✔Responsive design: BrowserStack cloud execution
+- ✔Jenkins: Secure pipeline automation
+- ✔Reporting: HTML for visual validation
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 > Ensure Python and Chrome are installed. Recommended: Python 3.9+
 
@@ -76,16 +76,16 @@ pip install selenium pytest pytest-html
 # 4. Run Pytest test suite with HTML report
 pytest Pytest_Execution/test_allara_health.py --html=Reports/pytest_report.html
 
-📊 View Report
+View Report
 Open the file Reports/pytest_report.html in your browser.
 
-🔐 GitHub Secrets (for BrowserStack or Jenkins)
+GitHub Secrets (for BrowserStack or Jenkins)
 If integrating into CI/CD:
 
 Add BROWSERSTACK_USERNAME and BROWSERSTACK_KEY under:
 GitHub > Settings > Secrets and Variables > Actions
 
-🎯 About This Portfolio
+About This Portfolio
 This project was created by Sonya [Your Last Name], a QA Software Tester with professional experience in:
 
 Manual and Automated Testing

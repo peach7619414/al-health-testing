@@ -1,7 +1,6 @@
 # Allara Health QA Portfolio Project
 
-This project is a **comprehensive Quality Assurance (QA) testing suite** created to test the web application of [Allara Health](https://allarahealth.com). It demonstrates full-stack QA expertise using real-world tools, frameworks, and techniques that cover front-end, back-end, API, and CI/CD pipelines — ideal for portfolio presentation or practical team implementation.
-
+This project is a **comprehensive Quality Assurance (QA) testing suite** created to test the web application of [Allara Health](https://allarahealth.com). 
 ---
 
 ## 📌 Project Overview

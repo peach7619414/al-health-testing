@@ -82,4 +82,4 @@ Includes **30+ test cases**, covering:
 ---
 
 **Author:** QA Analyst Portfolio (Sonya)  
-**Website under Test:** [https://allarahealth.com](https://allarahealth.co
+**Website under Test:** [https://allarahealth.com](https://allarahealth.com)

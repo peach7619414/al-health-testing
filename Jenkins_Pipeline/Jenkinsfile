@@ -1,0 +1,35 @@
+pipeline {
+  agent any
+
+  environment {
+    BROWSERSTACK_USERNAME = credentials('BROWSERSTACK_USERNAME')
+    BROWSERSTACK_KEY = credentials('BROWSERSTACK_KEY')
+  }
+
+  stages {
+    stage('Install Dependencies') {
+      steps {
+        sh 'pip install -r requirements.txt'
+      }
+    }
+
+    stage('Run Tests') {
+      steps {
+        sh 'pytest Selenium_Scripts/ --html=Reports/pytest_report.html --self-contained-html'
+      }
+    }
+
+    stage('Generate Allure Reports') {
+      steps {
+        sh 'pytest --alluredir=allure-results'
+        sh 'allure generate allure-results --clean -o Allure_Reports'
+      }
+    }
+  }
+
+  post {
+    always {
+      archiveArtifacts artifacts: '**/pytest_report.html', allowEmptyArchive: true
+    }
+  }
+}

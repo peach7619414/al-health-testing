@@ -1,0 +1,31 @@
+Test ID,Title,Preconditions,Test Steps,Expected Result,Test Type
+TC001,Login - Valid Credentials,User has an account,"Enter valid email and password, click login",User is logged in,Positive
+TC002,Login - Invalid Password,User has an account,"Enter valid email, wrong password, click login",Error message displayed,Negative
+TC003,Register New User,User is on register page,"Fill form with valid data, click submit",User is registered and redirected,Positive
+TC004,Register - Missing Email,User is on register page,"Leave email empty, submit form",Error message displayed,Negative
+TC005,Forgot Password,User is on forgot password page,"Enter registered email, click reset",Reset link sent,Positive
+TC006,Forgot Password - Invalid Email,User is on forgot password page,"Enter unregistered email, click reset",Error shown,Negative
+TC007,Logout,User is logged in,Click logout,User is redirected to login page,Positive
+TC008,Profile Update,User is logged in,"Edit profile, save changes",Changes saved confirmation,Positive
+TC009,Profile Update - Blank Name,User is logged in,"Clear name field, save",Error message,Negative
+TC010,Book Appointment,User is logged in,"Select provider and time, confirm",Appointment confirmed,Positive
+TC011,Book Appointment - Conflict,User already has booking,"Select same slot, confirm",Conflict error,Negative
+TC012,Payment - Valid Card,User is checking out,"Enter valid card info, pay",Payment successful,Positive
+TC013,Payment - Declined,User is checking out,"Enter declined test card, pay",Payment failed message,Negative
+TC014,Validate ZIP Code,User in profile section,"Enter invalid ZIP, save",Validation error,Negative
+TC015,Validate Phone Format,User in profile section,"Enter invalid phone, save",Validation error,Negative
+TC016,Session Timeout,User is idle,Wait 30+ min,User is logged out automatically,Negative
+TC017,Multiple Tabs,User opens two tabs,Make conflicting actions,State remains consistent,Edge
+TC018,Security - SQL Injection,User is on login page,Enter ' OR 1=1 --,Login fails,Security
+TC019,Security - XSS,User inputs script in name field,<script>alert(1)</script>,Input sanitized,Security
+TC020,UI Responsive Test,User accesses site from mobile,Navigate pages,Layout adjusts to screen,UI
+TC021,Change Password - Valid,User is logged in,"Go to change password, enter current and new password, save",Password is updated,Positive
+TC022,Change Password - Wrong Current,User is logged in,Enter wrong current password,Error message shown,Negative
+TC023,View Appointment History,User is logged in,Go to appointments tab,Past appointments listed,Positive
+TC024,Cancel Appointment,User has future booking,"Click cancel, confirm",Booking is removed,Positive
+TC025,Access Restricted Page Unauthenticated,User not logged in,Try to access profile URL directly,Redirected to login,Security
+TC026,Contact Support Form,User on support page,"Fill out form, submit",Confirmation message,Positive
+TC027,Email Format Validation,User is registering,Enter malformed email,Validation error shown,Negative
+TC028,UI - Dark Mode Toggle,User on dashboard,Toggle dark mode,Theme changes successfully,UI
+TC029,Accessibility - Keyboard Navigation,User on site,Navigate via Tab key,All elements reachable,Accessibility
+TC030,Mobile Layout - Booking,Mobile user logs in,Book appointment,"Layout adapts, process works",UI

@@ -1,97 +1,85 @@
-# Allara Health QA Portfolio Project
+# 🧪 Allara Health QA Testing Portfolio
 
-This project is a **comprehensive Quality Assurance (QA) testing suite** created to test the web application of [Allara Health](https://allarahealth.com). 
----
-
-## Project Overview
-
-**Allara Health** is a women’s health platform that provides virtual care and treatment for hormone-related conditions. This testing suite ensures that all key user workflows — from registration and login to appointments and payments — are robust, secure, and user-friendly.
+This is a complete software testing portfolio for the **Allara Health** web platform, showcasing full coverage using manual and automated QA tools.
 
 ---
 
-## Tools & Technologies Used
+## 🔧 Tools Used
 
-| Folder                 | What’s Inside                                                       |
-| ---------------------- | ------------------------------------------------------------------- |
-| `Test_Cases/`          | Gherkin `.feature` files for login (valid & invalid)                |
-| `Test_Cases_Excel/`    | CSV test cases (manual format) with positive & negative coverage    |
-| `Selenium_Scripts/`    | Full browser automation: login, appointment, and payment flows      |
-| `SQL_Scripts/`         | Data checks: user exists, duplicate appointments, declined payments |
-| `BrowserStack/`        | Secure config script using environment variables                    |
-| `Jenkins_Pipeline/`    | Jenkinsfile to run tests + generate Allure reports                  |
-| `Postman_Collections/` | API collection to register users (POST) with JSON payload           |
-| `Pytest_Execution/`    | Pytest automation suite with `@fixture` and real UI test flows      |
-| `Reports/`             | For HTML reports (optional if running locally)                      |
-| `Allure_Reports/`      | Allure integration instructions in `README.md`                      |
-
-## Folder Structure
-
- Test_Cases → Gherkin (.feature) files
-📂 Test_Cases_Excel → CSV-formatted test case documentation
-📂 Selenium_Scripts → Full Selenium test scripts (login, payment, etc.)
-📂 Pytest_Execution → Pytest suite with HTML report command
-📂 SQL_Scripts → Queries to validate database state
-📂 BrowserStack → Config using GitHub Secrets for cross-browser tests
-📂 Jenkins_Pipeline → Jenkinsfile for CI/CD integration
-📂 Postman_Collections → API test collection (valid/invalid scenarios)
-📂 Reports → Configs + generated HTML test reports
-
-yaml
-
-
+- **Selenium WebDriver (Python)** – UI test automation
+- **Cucumber (Gherkin)** – BDD test scenarios
+- **BrowserStack** – Cross-browser cloud execution
+- **Postman** – API testing
+- **SQL** – Backend validation
+- **Jenkins** – CI/CD test pipeline
+- **Allure** – Test reporting
 
 ---
 
-## Test Coverage Summary
+## 📁 Folder Structure
 
-- User Registration (valid, invalid, edge cases)
-- Login & Logout flows
-- Appointment Booking (with and without selections)
-- Payment with valid/invalid cards
-- Profile Update
-- API: Registration (positive + negative)
-- SQL: Data integrity, duplicate checks, declined payments
-- Responsive design: BrowserStack cloud execution
-- Jenkins: Secure pipeline automation
-- Reporting: HTML for visual validation
+```
+Allara_Health_QA_Portfolio/
+│
+├── Jenkins_Pipeline/           # Jenkinsfile for CI/CD automation
+├── Reports/                    # HTML Pytest reports
+├── Allure_Reports/             # Allure report directory
+├── Test_Cases/
+│   ├── CSV/                    # Test cases in Excel-friendly format
+│   └── Gherkin/                # Gherkin .feature files
+├── Selenium_Scripts/           # Python-based UI tests
+├── SQL_Scripts/                # Backend SQL validation
+├── Postman_Collections/        # Postman API tests
+└── BrowserStack/               # Selenium tests for BrowserStack
+```
 
 ---
 
-## How to Run Locally
+## 🚀 How to Run
 
-> Ensure Python and Chrome are installed. Recommended: Python 3.9+
+1. **Clone the repository**
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run tests locally:
+   ```
+   pytest Selenium_Scripts/ --html=Reports/pytest_report.html --self-contained-html
+   ```
+4. Generate Allure Report:
+   ```
+   pytest --alluredir=allure-results
+   allure generate allure-results --clean -o Allure_Reports
+   ```
 
-```bash
-# 1. Clone the project
-git clone https://github.com/YOUR-USERNAME/allara-health-qa-portfolio.git
-cd allara-health-qa-portfolio
+---
 
-# 2. (Optional) Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+## 🔐 GitHub Secrets (CI/CD Integration)
 
-# 3. Install dependencies
-pip install selenium pytest pytest-html
+If integrating into GitHub Actions:
 
-# 4. Run Pytest test suite with HTML report
-pytest Pytest_Execution/test_allara_health.py --html=Reports/pytest_report.html
+- Add the following under **Settings > Secrets and Variables > Actions**
+  - `BROWSERSTACK_USERNAME`
+  - `BROWSERSTACK_KEY`
 
-View Report
-Open the file Reports/pytest_report.html in your browser.
+---
 
-GitHub Secrets (for BrowserStack or Jenkins)
-If integrating into CI/CD:
+## 📊 View Reports
 
-Add BROWSERSTACK_USERNAME and BROWSERSTACK_KEY under:
-GitHub > Settings > Secrets and Variables > Actions
+- HTML: Open `Reports/pytest_report.html`
+- Allure: Open index.html inside `Allure_Reports/`
 
-About This Portfolio
-This project was created by Sunny Nelson a QA Software Tester with professional experience in:
+---
 
-Manual and Automated Testing
+## ✅ Test Coverage
 
-Web UI, API, and Database Validation
+Includes **30+ test cases**, covering:
+- Authentication (login, logout, register, forgot password)
+- Booking & payments
+- Security (SQLi, XSS)
+- UI & Mobile responsiveness
+- Profile validations (ZIP, phone)
+- API endpoints
+- CI/CD reporting with Jenkins + Allure
 
-Test Strategy & Execution
+---
 
-Agile SDLC & QA Reporting
+**Author:** QA Analyst Portfolio (Sonya)  
+**Website under Test:** [https://allarahealth.com](https://allarahealth.co

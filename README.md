@@ -11,18 +11,18 @@ This project is a **comprehensive Quality Assurance (QA) testing suite** created
 
 ## Tools & Technologies Used
 
-| Tool                | Purpose                                         |
-|---------------------|--------------------------------------------------|
-| **Selenium WebDriver** | UI test automation for key user journeys         |
-| **Pytest**          | Automation test framework with HTML reporting   |
-| **Postman**         | REST API testing for endpoints like registration |
-| **SQL**             | Backend data validation and integrity checks    |
-| **Gherkin (Behave)**| BDD-style test scenarios for clarity            |
-| **Jenkins**         | CI/CD pipeline for test execution               |
-| **BrowserStack**    | Cross-browser/device testing with cloud infra   |
-| **HTML Reports**    | Viewable test result summaries for stakeholders |
-
----
+| Folder                 | What’s Inside                                                       |
+| ---------------------- | ------------------------------------------------------------------- |
+| `Test_Cases/`          | Gherkin `.feature` files for login (valid & invalid)                |
+| `Test_Cases_Excel/`    | CSV test cases (manual format) with positive & negative coverage    |
+| `Selenium_Scripts/`    | Full browser automation: login, appointment, and payment flows      |
+| `SQL_Scripts/`         | Data checks: user exists, duplicate appointments, declined payments |
+| `BrowserStack/`        | Secure config script using environment variables                    |
+| `Jenkins_Pipeline/`    | Jenkinsfile to run tests + generate Allure reports                  |
+| `Postman_Collections/` | API collection to register users (POST) with JSON payload           |
+| `Pytest_Execution/`    | Pytest automation suite with `@fixture` and real UI test flows      |
+| `Reports/`             | For HTML reports (optional if running locally)                      |
+| `Allure_Reports/`      | Allure integration instructions in `README.md`                      |
 
 ## Folder Structure
 

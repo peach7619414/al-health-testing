@@ -1,4 +1,4 @@
-# Allara Health QA Automation Portfolio
+# Al Health QA Automation Portfolio
 
 This is a complete QA testing portfolio built for **AllaraHealth.com**, a healthcare platform focused on personalized care for women with chronic hormonal conditions.
 The project demonstrates **full test coverage** across frontend (UI), backend (SQL), API, cross-browser testing, and visual reporting, using manual and automated testing strategies.

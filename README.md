@@ -43,9 +43,9 @@ The project demonstrates **full test coverage** across frontend (UI), backend (S
 
 ---
 
-## 📌 Highlights of Test Coverage
+# Highlights of Test Coverage
 
-### 🧪 Manual Test Cases
+#  Manual Test Cases
 - Written in CSV for easy Zephyr import
 - Cover positive and negative flows for:
   - User Registration
@@ -55,29 +55,29 @@ The project demonstrates **full test coverage** across frontend (UI), backend (S
   - Appointment Booking & Cancellation
   - Payment Flows (Success/Failure)
 
-### 💻 UI Automation with Selenium
+# UI Automation with Selenium
 - Written in **Python + Pytest**
 - Full interaction coverage with locators and assertions
 - Covers dynamic elements, form validations, redirects
 
-### 🔐 API Testing with Postman
+# API Testing with Postman
 - Auth endpoints: Register, Login, Logout
 - CRUD operations for appointments
 - Payment gateway validation
 - Status code + schema validation
 
-### 🧠 SQL Scripts
+# SQL Scripts
 - Verify backend updates for user and appointment data
 - Ensure payment transactions are logged
 - Validate DB integrity for failed logins or null values
 
-### 🌍 BrowserStack
+# BrowserStack
 - Executed on Chrome, Safari, Firefox, and Edge
 - Validated responsive behavior and layout across devices
 
 ---
 
-## 📎 Jira Ticket Example
+# Jira Ticket Example
 
 **Location:**  
 `JIRA_Zephyr/Sample_Jira_Ticket/BUG-001_Login_Invalid_Credentials.md`
@@ -85,7 +85,7 @@ The project demonstrates **full test coverage** across frontend (UI), backend (S
 **Contents:**
 - Title, Steps, Expected/Actual Results
 - Linked Test Case: `TC002`
-- Attached: 📷 `allure_login_failure.png` (report screenshot)
+- Attached: `allure_login_failure.png` (report screenshot)
 
 ---
 # HTML Report (Pytest):
@@ -100,42 +100,45 @@ This report provides:
 - Detailed failure logs (if any)
 - A visual overview of the test run using tables and charts
 
-
 # Allure Report:
 Launch in browser:
 ```bash
 allure serve Allure_Reports/
-Includes:
+```
 
--Test run summary
--Pass/Fail/Skip stats
--Linked test cases & tags
-- Attachments for failed test steps
+**Includes:**
+- Test run summary  
+- Pass/Fail/Skip stats  
+- Linked test cases & tags  
+- Attachments for failed test steps  
+
+---
 
 # How to Run This Project
-Install Requirements
-pip install selenium pytest pytest-html allure-pytest
 
-#Run Tests & Generate Reports
+# Install Requirements
+```bash
+pip install selenium pytest pytest-html allure-pytest
+```
+
+# Run Tests & Generate Reports
+```bash
 pytest Selenium_Scripts/ --html=Reports/pytest_report.html --self-contained-html --alluredir=Allure_Reports/
 allure serve Allure_Reports/
+```
 
-Zephyr Integration Instructions
-Import test cases from Test_Cases/CSV/test_cases_allara.csv into your Zephyr test cycle.
+---
 
-Log bugs using Jira (markdown in /Sample_Jira_Ticket)
-Attach test results (Allure/HTML) directly to Jira execution cycles
+# Zephyr Integration Instructions
+- Import test cases from `Test_Cases/CSV/test_cases_allara.csv` into your Zephyr test cycle.
+- Log bugs using Jira (markdown in `/Sample_Jira_Ticket`)
+- Attach test results (Allure/HTML) directly to Jira execution cycles
 
-Author
-Sonya Nelson
-GitHub Portfolio
-QA Engineer | Manual & Automation | Selenium | Postman | SQL | Jira/Zephyr | Allure
+---
+
+# Author
+
+**Sonya Nelson**  
+GitHub Portfolio  
+QA Engineer | Manual & Automation | Selenium | Postman | SQL | Jira/Zephyr | Allure  
 Based in New York City
-
-
-
-
-
-
-
-

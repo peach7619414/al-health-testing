@@ -1,85 +1,63 @@
-# 🧪 Allara Health QA Testing Portfolio
+# Allara Health QA Automation Portfolio
 
-This is a complete software testing portfolio for the **Allara Health** web platform, showcasing full coverage using manual and automated QA tools.
+This is a complete QA testing portfolio built for **AllaraHealth.com**, a healthcare platform focused on personalized care for women with chronic hormonal conditions.
 
----
+The project demonstrates **full test coverage** across frontend (UI), backend (SQL), API, cross-browser testing, and visual reporting, using manual and automated testing strategies.
 
-## 🔧 Tools Used
+# Allara Health QA Automation Portfolio
 
-- **Selenium WebDriver (Python)** – UI test automation
-- **Cucumber (Gherkin)** – BDD test scenarios
-- **BrowserStack** – Cross-browser cloud execution
-- **Postman** – API testing
-- **SQL** – Backend validation
-- **Jenkins** – CI/CD test pipeline
-- **Allure** – Test reporting
+This portfolio showcases full-spectrum QA testing for AllaraHealth.com, a digital platform for women's hormonal care. The project simulates a real-world test environment with manual and automated test coverage across UI, API, backend, and cross-browser layers.
 
 ---
 
-## 📁 Folder Structure
+## Tools Used
 
-```
-Allara_Health_QA_Portfolio/
-│
-├── Jenkins_Pipeline/           # Jenkinsfile for CI/CD automation
-├── Reports/                    # HTML Pytest reports
-├── Allure_Reports/             # Allure report directory
+| Category        | Tools                          |
+|----------------|--------------------------------|
+| Test Management| Jira + Zephyr                  |
+| UI Automation  | Selenium WebDriver (Python), Pytest |
+| API Testing    | Postman                        |
+| Backend Testing| MySQL + SQL Scripts            |
+| Reporting      | Pytest HTML Report, Allure     |
+| Cross-Browser  | BrowserStack                   |
+| Source Control | Git + GitHub                   |
+
+---
+
+## Folder Structure
+Allara_Health_QA_Portfolio_COMPLETE_FINAL/
+├── JIRA_Zephyr/
+│ ├── Sample_Jira_Ticket/ → Simulated Jira ticket with Allure screenshot
+│ └── README.md → Zephyr import guide
+├── Reports/ → HTML report from Pytest
+├── Allure_Reports/ → Allure results (open via CLI)
 ├── Test_Cases/
-│   ├── CSV/                    # Test cases in Excel-friendly format
-│   └── Gherkin/                # Gherkin .feature files
-├── Selenium_Scripts/           # Python-based UI tests
-├── SQL_Scripts/                # Backend SQL validation
-├── Postman_Collections/        # Postman API tests
-└── BrowserStack/               # Selenium tests for BrowserStack
-```
+│ └── CSV/ → 30+ Jira/Zephyr-ready test cases
+├── Selenium_Scripts/ → Functional UI automation scripts
+├── SQL_Scripts/ → DB validations
+├── Postman_Collections/ → REST API testing
+└── BrowserStack/ → Multi-browser configuration
 
----
+## Sample Jira Ticket
+See `JIRA_Zephyr/Sample_Jira_Ticket/BUG-001_Login_Invalid_Credentials.md` for a realistic Jira bug.  
+This ticket includes a linked test case and an Allure report **screenshot** as attachment.
 
-## 🚀 How to Run
+## Reporting
+- **Pytest HTML Report:** `Reports/pytest_report.html`
+- **Allure Report:** Open with:
+```bash
+allure serve Allure_Reports/
 
-1. **Clone the repository**
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run tests locally:
-   ```
-   pytest Selenium_Scripts/ --html=Reports/pytest_report.html --self-contained-html
-   ```
-4. Generate Allure Report:
-   ```
-   pytest --alluredir=allure-results
-   allure generate allure-results --clean -o Allure_Reports
-   ```
+pytest Selenium_Scripts/ --html=Reports/pytest_report.html --alluredir=Allure_Reports/
 
----
+Zephyr Integration
+Test cases imported from Test_Cases/CSV/
 
-## 🔐 GitHub Secrets (CI/CD Integration)
+Defects logged in Jira using structured markdown
 
-If integrating into GitHub Actions:
+Allure reports attached or linked per test case
 
-- Add the following under **Settings > Secrets and Variables > Actions**
-  - `BROWSERSTACK_USERNAME`
-  - `BROWSERSTACK_KEY`
+Author
+Sonya Nelson
+QA Portfolio | Automation | API | Jira | SQL | Selenium | Allure
 
----
-
-## 📊 View Reports
-
-- HTML: Open `Reports/pytest_report.html`
-- Allure: Open index.html inside `Allure_Reports/`
-
----
-
-## ✅ Test Coverage
-
-Includes **30+ test cases**, covering:
-- Authentication (login, logout, register, forgot password)
-- Booking & payments
-- Security (SQLi, XSS)
-- UI & Mobile responsiveness
-- Profile validations (ZIP, phone)
-- API endpoints
-- CI/CD reporting with Jenkins + Allure
-
----
-
-**Author:** QA Analyst Portfolio (Sonya)  
-**Website under Test:** [https://allarahealth.com](https://allarahealth.com)

@@ -88,20 +88,18 @@ The project demonstrates **full test coverage** across frontend (UI), backend (S
 - Attached: 📷 `allure_login_failure.png` (report screenshot)
 
 ---
-
-# Test Reporting
-
 # HTML Report (Pytest):
 Navigate to:
-Reports/pytest_report.html
+
+`Reports/pytest_report.html`
 
 This report provides:
--A summary of all test executions
--Pass/Fail status for each test
--Execution time
--Detailed failure logs (if any)
--A visual overview of the test run using tables and charts
----
+- A summary of all test executions
+- Pass/Fail status for each test
+- Execution time
+- Detailed failure logs (if any)
+- A visual overview of the test run using tables and charts
+
 
 # Allure Report:
 Launch in browser:
